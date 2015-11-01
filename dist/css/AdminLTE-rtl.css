@@ -14,6 +14,36 @@ html,
 body {
   min-height: 100%;
 }
+@font-face {
+    font-family: 'IRANSans-Light';
+    src: url('../fonts/IRANSans-Light-web.eot');
+    src: url('../fonts/IRANSans-Light-web.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IRANSans-Light-web.woff2') format('woff2'),
+         url('../fonts/IRANSans-Light-web.woff') format('woff'),
+         url('../fonts/IRANSans-Light-web.ttf') format('truetype'),
+         url('../fonts/IRANSans-Light-web.svg#IRANSans-Light') format('svg');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'IRANSans-Bold';
+    src: url('../fonts/IRANSans-Bold-web.eot');
+    src: url('../fonts/IRANSans-Bold-web.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IRANSans-Bold-web.woff2') format('woff2'),
+         url('../fonts/IRANSans-Bold-web.woff') format('woff'),
+         url('../fonts/IRANSans-Bold-web.ttf') format('truetype'),
+         url('../fonts/IRANSans-Bold-web.svg#IRANSans-Bold') format('svg');
+    font-weight: normal;
+}
+h1 > small {
+	font-family: 'IRANSans-Light','Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.user-header > p > small {
+	margin-top: 5px;
+}
+.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > p {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
 .layout-boxed html,
 .layout-boxed body {
   height: 100%;
@@ -21,7 +51,7 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'IRANSans-Light','Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
@@ -162,7 +192,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'IRANSans-Bold','Source Sans Pro', sans-serif;
 }
 /* General Links */
 a {
@@ -1035,7 +1065,7 @@ a:focus {
   left: 0;
 }
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > p {
-  margin: 0 45px 0 0;
+  margin-right: 45px;
   font-size: 12px;
   color: #888888;
 }
